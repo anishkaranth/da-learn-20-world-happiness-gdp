@@ -1,0 +1,25 @@
+check_name,failed_rows,status
+GDP per capita > 0 where present,0,PASS
+GDP quintiles cover all latest countries with GDP,0,PASS
+WB and WHR log GDP agree (corr >= 0.9),0,PASS
+"World Bank (iso3, year) unique",0,PASS
+World Bank match >= 95% of country-years,0,PASS
+"clean panel rows = distinct valid (country, year) keys in staging",0,PASS
+dim_country.country unique,0,PASS
+dim_country.iso3 unique where present,0,PASS
+every WHR 2024 ranking country found in panel,0,PASS
+every country has a region,0,PASS
+"fact (country_key, year) unique",0,PASS
+fact rows = cleaned panel rows (no fan-out / loss in joins),0,PASS
+fact.country_key -> dim_country,0,PASS
+fact.year -> dim_year,0,PASS
+gdp_pc_usd = gdp_usd / population,0,PASS
+healthy life expectancy within 0..100,0,PASS
+latest-window countries all have 2021-23 surveys,0,PASS
+life ladder within 0..10,0,PASS
+no NULL country / year / life ladder in fact,0,PASS
+only Taiwan + Somaliland lack a World Bank code,0,PASS
+population > 0 where present,0,PASS
+positive ladder-GDP correlation (sanity),0,PASS
+ratio factors within 0..1,0,PASS
+survey years within 2005..2023,0,PASS

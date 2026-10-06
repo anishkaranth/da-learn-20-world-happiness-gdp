@@ -1,0 +1,60 @@
+// measures.dax  Paste into Power BI one measure at a time (home table: fact_country_year).
+// Matches the SQL definitions in sql/04_analysis.sql. GDP in current US$ (World Bank).
+
+Country Years = COUNTROWS ( fact_country_year )
+
+Countries = DISTINCTCOUNT ( fact_country_year[country_key] )
+
+Avg Life Ladder = AVERAGE ( fact_country_year[life_ladder] )
+
+Median Life Ladder = MEDIAN ( fact_country_year[life_ladder] )
+
+Pop-weighted Life Ladder =
+DIVIDE (
+    SUMX ( FILTER ( fact_country_year, fact_country_year[population] > 0 ), fact_country_year[life_ladder] * fact_country_year[population] ),
+    CALCULATE ( SUM ( fact_country_year[population] ), fact_country_year[population] > 0 )
+)
+
+Avg GDP per Capita (US$) = AVERAGE ( fact_country_year[gdp_pc_usd] )
+
+Avg Social Support = AVERAGE ( fact_country_year[social_support] )
+
+Avg Healthy Life Expectancy = AVERAGE ( fact_country_year[healthy_life_exp] )
+
+Avg Freedom = AVERAGE ( fact_country_year[freedom] )
+
+Avg Perceived Corruption = AVERAGE ( fact_country_year[corruption] )
+
+Avg Negative Affect = AVERAGE ( fact_country_year[negative_affect] )
+
+// Pearson correlation of ladder with ln(GDP per capita) over the rows in filter context (rows with both values)
+Corr Ladder vs Log GDP =
+VAR t = FILTER ( fact_country_year, NOT ISBLANK ( fact_country_year[ln_gdp_pc_usd] ) && NOT ISBLANK ( fact_country_year[life_ladder] ) )
+VAR n = COUNTROWS ( t )
+VAR mx = AVERAGEX ( t, fact_country_year[ln_gdp_pc_usd] )
+VAR my = AVERAGEX ( t, fact_country_year[life_ladder] )
+VAR sxy = SUMX ( t, ( fact_country_year[ln_gdp_pc_usd] - mx ) * ( fact_country_year[life_ladder] - my ) )
+VAR sxx = SUMX ( t, ( fact_country_year[ln_gdp_pc_usd] - mx ) ^ 2 )
+VAR syy = SUMX ( t, ( fact_country_year[life_ladder] - my ) ^ 2 )
+RETURN DIVIDE ( sxy, SQRT ( sxx * syy ) )
+
+// OLS slope of ladder on ln(GDP pc) x ln(2) = ladder points per doubling of GDP per capita
+Ladder Gain per GDP Doubling =
+VAR t = FILTER ( fact_country_year, NOT ISBLANK ( fact_country_year[ln_gdp_pc_usd] ) )
+VAR mx = AVERAGEX ( t, fact_country_year[ln_gdp_pc_usd] )
+VAR my = AVERAGEX ( t, fact_country_year[life_ladder] )
+RETURN DIVIDE ( SUMX ( t, ( fact_country_year[ln_gdp_pc_usd] - mx ) * ( fact_country_year[life_ladder] - my ) ),
+                SUMX ( t, ( fact_country_year[ln_gdp_pc_usd] - mx ) ^ 2 ) ) * LN ( 2 )
+
+World Bank Match % = DIVIDE ( CALCULATE ( [Country Years], fact_country_year[dq_no_gdp_pc] = 0 ), [Country Years] ) * 100
+
+// 2021-23 "latest" window used throughout results/RESULTS.md
+Avg Life Ladder 2021-23 =
+AVERAGEX (
+    VALUES ( fact_country_year[country_key] ),
+    CALCULATE ( AVERAGE ( fact_country_year[life_ladder] ), dim_year[year] >= 2021, dim_year[year] <= 2023 )
+)
+
+Ladder Change 2006-10 to 2019-23 =
+CALCULATE ( [Avg Life Ladder], dim_year[year] >= 2019, dim_year[year] <= 2023 )
+    - CALCULATE ( [Avg Life Ladder], dim_year[year] >= 2006, dim_year[year] <= 2010 )

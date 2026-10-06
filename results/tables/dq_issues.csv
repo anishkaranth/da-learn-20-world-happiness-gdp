@@ -1,0 +1,13 @@
+check_name,affected_rows
+RI: fact rows lost in dim joins,0
+country: WHR -> World Bank name overrides applied,18
+country: WHR 2024 ranking rows not in panel,0
+"country: no World Bank series (Taiwan, Somaliland)",2
+country: region not in WHR 2024 ranking (explicit fallback),22
+fact: country-years without World Bank GDP per capita,37
+wb: WHR-country years 2005-2023 with population but no GDP,37
+whr_panel: country name recoded (Türkiye -> Turkiye),18
+whr_panel: duplicate country x year rows dropped,0
+whr_panel: ladder outside 0..10,0
+whr_panel: ratio factor outside 0..1,0
+whr_panel: rows with >= 1 missing factor (kept),266

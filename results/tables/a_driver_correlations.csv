@@ -1,0 +1,10 @@
+factor,corr_with_ladder,n_obs
+Freedom to make life choices,0.5382,2327
+Generosity,0.1774,2282
+Healthy life expectancy,0.7149,2300
+"Log GDP per capita (WHR, PPP)",0.7836,2335
+"Log GDP per capita (World Bank, US$)",0.8109,2326
+Negative affect,-0.3524,2347
+Perceived corruption,-0.4305,2238
+Positive affect,0.5153,2339
+Social support,0.7227,2350

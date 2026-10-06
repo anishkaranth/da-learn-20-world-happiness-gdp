@@ -1,0 +1,2 @@
+countries,country_years,first_year,last_year,wb_match_pct,countries_latest,avg_ladder_latest,pop_weighted_ladder_latest,max_ladder_latest,min_ladder_latest,corr_ladder_log_gdp_pc,corr_ladder_gdp_pc_linear,r2_ladder_on_log_gdp_latest,ladder_gain_per_gdp_doubling,ladder_gap_top_bottom_quintile
+12,163,2005,2023,99.39,10,5.204,5.007,6.411,1.721,0.81,0.559,0.8048,0.65,3.347

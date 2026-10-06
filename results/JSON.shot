@@ -1,0 +1,90 @@
+{
+ "snapshot": "headline KPIs + run config",
+ "project": "da-learn-20-world-happiness-gdp",
+ "source_mode": "full",
+ "engine": "duckdb 1.5.6",
+ "config": {
+  "sql_dialect": "Spark SQL style (+ DuckDB shims in sql/00), run on DuckDB; Databricks skipped (workspace quota)",
+  "grain": "fact_country_year = one WHR country x survey year (Gallup World Poll national average)",
+  "happiness": "life_ladder = Cantril ladder 0-10 (national average answer)",
+  "gdp": "gdp_pc_usd = World Bank GDP current US$ / World Bank population, same calendar year; WHR log GDP pc (PPP) kept alongside",
+  "latest_window": "country averages over survey years 2021-2023 (a_country_latest)",
+  "join": "WHR country name -> World Bank name (18 explicit overrides, Turkiye recoded) -> ISO3; Taiwan and Somaliland have no WB series",
+  "change_windows": "2006-10 vs 2019-23 averages, countries with >= 2 surveys in each window",
+  "sample_rule": "data/raw: every 14th panel country alphabetically with all years, their 2024 ranking rows, and their WB GDP/population rows 2005-2023 plus WLD (scripts/make_sample.py)"
+ },
+ "headline": {
+  "countries": 165,
+  "country_years": 2363,
+  "first_year": 2005,
+  "last_year": 2023,
+  "wb_match_pct": 98.43,
+  "countries_latest": 143,
+  "avg_ladder_latest": 5.528,
+  "pop_weighted_ladder_latest": 5.266,
+  "max_ladder_latest": 7.741,
+  "min_ladder_latest": 1.721,
+  "corr_ladder_log_gdp_pc": 0.8109,
+  "corr_ladder_gdp_pc_linear": 0.7044,
+  "r2_ladder_on_log_gdp_latest": 0.679,
+  "ladder_gain_per_gdp_doubling": 0.459,
+  "ladder_gap_top_bottom_quintile": 2.61
+ },
+ "top5_2023": [
+  {"country": "Finland", "life_ladder": 7.699, "gdp_pc_usd": 53759.0},
+  {"country": "Iceland", "life_ladder": 7.562, "gdp_pc_usd": 80433.0},
+  {"country": "Denmark", "life_ladder": 7.504, "gdp_pc_usd": 67967.0},
+  {"country": "Costa Rica", "life_ladder": 7.384, "gdp_pc_usd": 16942.0},
+  {"country": "Netherlands", "life_ladder": 7.255, "gdp_pc_usd": 62545.0}
+ ],
+ "bottom5_2023": [
+  {"country": "Afghanistan", "life_ladder": 1.446, "gdp_pc_usd": null},
+  {"country": "Malawi", "life_ladder": 3.272, "gdp_pc_usd": 667.0},
+  {"country": "Botswana", "life_ladder": 3.332, "gdp_pc_usd": 7820.0},
+  {"country": "Congo (Kinshasa)", "life_ladder": 3.383, "gdp_pc_usd": 628.0},
+  {"country": "Sierra Leone", "life_ladder": 3.467, "gdp_pc_usd": 450.0}
+ ],
+ "gdp_quintiles": [
+  {"gdp_quintile": "Q1 poorest", "countries": 28, "avg_ladder": 4.235, "avg_social_support": 0.638},
+  {"gdp_quintile": "Q2", "countries": 28, "avg_ladder": 4.733, "avg_social_support": 0.718},
+  {"gdp_quintile": "Q3", "countries": 28, "avg_ladder": 5.649, "avg_social_support": 0.818},
+  {"gdp_quintile": "Q4", "countries": 28, "avg_ladder": 6.21, "avg_social_support": 0.887},
+  {"gdp_quintile": "Q5 richest", "countries": 28, "avg_ladder": 6.845, "avg_social_support": 0.897}
+ ],
+ "drivers": [
+  {"factor": "Log GDP per capita (World Bank, US$)", "corr_with_ladder": 0.8109},
+  {"factor": "Log GDP per capita (WHR, PPP)", "corr_with_ladder": 0.7836},
+  {"factor": "Social support", "corr_with_ladder": 0.7227},
+  {"factor": "Healthy life expectancy", "corr_with_ladder": 0.7149},
+  {"factor": "Freedom to make life choices", "corr_with_ladder": 0.5382},
+  {"factor": "Positive affect", "corr_with_ladder": 0.5153},
+  {"factor": "Generosity", "corr_with_ladder": 0.1774},
+  {"factor": "Negative affect", "corr_with_ladder": -0.3524},
+  {"factor": "Perceived corruption", "corr_with_ladder": -0.4305}
+ ],
+ "growth_vs_change": [
+  {
+   "growth_quartile": "G1 slowest",
+   "countries": 31,
+   "avg_gdp_pc_growth_pct": 0.4,
+   "avg_ladder_change": -0.248
+  },
+  {"growth_quartile": "G2", "countries": 31, "avg_gdp_pc_growth_pct": 17.2, "avg_ladder_change": 0.076},
+  {"growth_quartile": "G3", "countries": 30, "avg_gdp_pc_growth_pct": 33.0, "avg_ladder_change": 0.392},
+  {
+   "growth_quartile": "G4 fastest",
+   "countries": 30,
+   "avg_gdp_pc_growth_pct": 66.2,
+   "avg_ladder_change": 0.495
+  }
+ ],
+ "covid_shift": [
+  {"metric": "Generosity", "countries": 139, "avg_2017_19": -0.024, "avg_2020_22": 0.021, "change": 0.044},
+  {"metric": "Life ladder", "countries": 143, "avg_2017_19": 5.546, "avg_2020_22": 5.501, "change": -0.046},
+  {"metric": "Negative affect", "countries": 143, "avg_2017_19": 0.289, "avg_2020_22": 0.302, "change": 0.013},
+  {"metric": "Positive affect", "countries": 143, "avg_2017_19": 0.654, "avg_2020_22": 0.654, "change": -0.0},
+  {"metric": "Social support", "countries": 143, "avg_2017_19": 0.815, "avg_2020_22": 0.797, "change": -0.018}
+ ],
+ "assertions_passed": 24,
+ "assertions_total": 24
+}

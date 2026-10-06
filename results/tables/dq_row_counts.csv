@@ -1,0 +1,8 @@
+entity,raw_rows,distinct_keys,clean_rows,grain
+dim_country,,,165,WHR country
+dim_year,,,19,survey year
+fact_country_year,,,2363,country x survey year
+wb_gdp,13979,13979,13979,country/aggregate x year
+wb_population,17394,17394,17394,country/aggregate x year
+whr_2024_ranking,143,143,143,"country (2024 ranking, matched to panel)"
+whr_panel,2363,2363,2363,country x survey year

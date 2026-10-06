@@ -1,0 +1,6 @@
+gdp_quintile,countries,min_gdp_pc_usd,max_gdp_pc_usd,avg_ladder,avg_social_support,avg_healthy_life_exp,avg_freedom,avg_corruption
+Q1 poorest,2,357.0,767.0,2.995,0.482,55.9,0.528,0.819
+Q2,2,1326.0,4398.0,4.625,0.63,60.5,0.766,0.744
+Q3,2,5073.0,5477.0,5.991,0.87,61.8,0.78,0.84
+Q4,2,6409.0,10041.0,6.068,0.846,68.3,0.792,0.812
+Q5 richest,2,16245.0,36565.0,6.342,0.877,71.3,0.754,0.831

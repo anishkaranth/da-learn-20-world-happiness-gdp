@@ -1,0 +1,172 @@
+{
+ "project": "da-learn-20-world-happiness-gdp",
+ "dataset": "World Happiness Report 2024 data (Helliwell, Layard, Sachs, De Neve, Aknin & Wang; Gallup World Poll): yearly country panel 2005-2023 (2,363 country-years, 165 countries) + WHR 2024 ranking (143 countries); Kaggle jainaru/world-happiness-report-2024-yearly-updated (CC0 on Kaggle). Joined to World Bank WDI GDP (NY.GDP.MKTP.CD, current US$) and population (SP.POP.TOTL) via the datasets/gdp and datasets/population GitHub packages (GDP CC BY 4.0, population ODC-PDDL; World Bank WDI source data CC BY 4.0). Total 1,299,097 B in 4 CSVs",
+ "source_mode": "sample",
+ "kpis": {
+  "countries": 12,
+  "country_years": 163,
+  "first_year": 2005,
+  "last_year": 2023,
+  "wb_match_pct": 99.39,
+  "countries_latest": 10,
+  "avg_ladder_latest": 5.204,
+  "pop_weighted_ladder_latest": 5.007,
+  "max_ladder_latest": 6.411,
+  "min_ladder_latest": 1.721,
+  "corr_ladder_log_gdp_pc": 0.81,
+  "corr_ladder_gdp_pc_linear": 0.559,
+  "r2_ladder_on_log_gdp_latest": 0.8048,
+  "ladder_gain_per_gdp_doubling": 0.65,
+  "ladder_gap_top_bottom_quintile": 3.347
+ },
+ "analysis_tables": [
+  "tables/a_kpi_headline.csv",
+  "tables/a_country_latest.csv",
+  "tables/a_ladder_by_year.csv",
+  "tables/a_region_summary.csv",
+  "tables/a_gdp_quintile.csv",
+  "tables/a_driver_correlations.csv",
+  "tables/a_top_bottom_2023.csv",
+  "tables/a_income_residual.csv",
+  "tables/a_happiness_change.csv",
+  "tables/a_growth_vs_change.csv",
+  "tables/a_covid_shift.csv"
+ ],
+ "data_quality": {
+  "row_counts": [
+   {
+    "entity": "whr_panel",
+    "raw_rows": 163,
+    "distinct_keys": 163,
+    "clean_rows": 163,
+    "grain": "country x survey year"
+   },
+   {
+    "entity": "whr_2024_ranking",
+    "raw_rows": 10,
+    "distinct_keys": 10,
+    "clean_rows": 10,
+    "grain": "country (2024 ranking, matched to panel)"
+   },
+   {
+    "entity": "wb_gdp",
+    "raw_rows": 246,
+    "distinct_keys": 246,
+    "clean_rows": 246,
+    "grain": "country/aggregate x year"
+   },
+   {
+    "entity": "wb_population",
+    "raw_rows": 247,
+    "distinct_keys": 247,
+    "clean_rows": 247,
+    "grain": "country/aggregate x year"
+   },
+   {
+    "entity": "fact_country_year",
+    "raw_rows": null,
+    "distinct_keys": null,
+    "clean_rows": 163,
+    "grain": "country x survey year"
+   },
+   {
+    "entity": "dim_country",
+    "raw_rows": null,
+    "distinct_keys": null,
+    "clean_rows": 12,
+    "grain": "WHR country"
+   },
+   {"entity": "dim_year", "raw_rows": null, "distinct_keys": null, "clean_rows": 19, "grain": "survey year"}
+  ],
+  "null_rates": [
+   {
+    "entity": "whr_panel",
+    "column_name": "Log GDP per capita",
+    "null_pct": 1.227,
+    "treatment": "kept NULL; WB GDP used instead"
+   },
+   {
+    "entity": "whr_panel",
+    "column_name": "Social support",
+    "null_pct": 0.613,
+    "treatment": "kept NULL (excluded from AVG/corr)"
+   },
+   {
+    "entity": "whr_panel",
+    "column_name": "Healthy life expectancy",
+    "null_pct": 0.0,
+    "treatment": "kept NULL"
+   },
+   {
+    "entity": "whr_panel",
+    "column_name": "Freedom to make life choices",
+    "null_pct": 0.0,
+    "treatment": "kept NULL"
+   },
+   {"entity": "whr_panel", "column_name": "Generosity", "null_pct": 1.84, "treatment": "kept NULL"},
+   {
+    "entity": "whr_panel",
+    "column_name": "Perceptions of corruption",
+    "null_pct": 0.613,
+    "treatment": "kept NULL"
+   },
+   {"entity": "whr_panel", "column_name": "Positive affect", "null_pct": 0.613, "treatment": "kept NULL"},
+   {"entity": "whr_panel", "column_name": "Negative affect", "null_pct": 0.0, "treatment": "kept NULL"},
+   {
+    "entity": "fact_country_year",
+    "column_name": "gdp_pc_usd (World Bank)",
+    "null_pct": 0.613,
+    "treatment": "no WB match or no GDP that year"
+   }
+  ],
+  "issues": {
+   "whr_panel: duplicate country x year rows dropped": 0,
+   "whr_panel: rows with >= 1 missing factor (kept)": 4,
+   "whr_panel: country name recoded (T\u00fcrkiye -> Turkiye)": 0,
+   "whr_panel: ladder outside 0..10": 0,
+   "whr_panel: ratio factor outside 0..1": 0,
+   "country: WHR -> World Bank name overrides applied": 0,
+   "country: no World Bank series (Taiwan, Somaliland)": 0,
+   "country: region not in WHR 2024 ranking (explicit fallback)": 2,
+   "country: WHR 2024 ranking rows not in panel": 0,
+   "fact: country-years without World Bank GDP per capita": 1,
+   "wb: WHR-country years 2005-2023 with population but no GDP": 1,
+   "RI: fact rows lost in dim joins": 0
+  },
+  "assertions": {
+   "fact (country_key, year) unique": "PASS",
+   "fact rows = cleaned panel rows (no fan-out / loss in joins)": "PASS",
+   "fact.country_key -> dim_country": "PASS",
+   "fact.year -> dim_year": "PASS",
+   "dim_country.country unique": "PASS",
+   "dim_country.iso3 unique where present": "PASS",
+   "every country has a region": "PASS",
+   "life ladder within 0..10": "PASS",
+   "ratio factors within 0..1": "PASS",
+   "GDP per capita > 0 where present": "PASS",
+   "World Bank match >= 95% of country-years": "PASS",
+   "WB and WHR log GDP agree (corr >= 0.9)": "PASS",
+   "GDP quintiles cover all latest countries with GDP": "PASS",
+   "clean panel rows = distinct valid (country, year) keys in staging": "PASS",
+   "no NULL country / year / life ladder in fact": "PASS",
+   "survey years within 2005..2023": "PASS",
+   "every WHR 2024 ranking country found in panel": "PASS",
+   "only Taiwan + Somaliland lack a World Bank code": "PASS",
+   "World Bank (iso3, year) unique": "PASS",
+   "population > 0 where present": "PASS",
+   "gdp_pc_usd = gdp_usd / population": "PASS",
+   "healthy life expectancy within 0..100": "PASS",
+   "latest-window countries all have 2021-23 surveys": "PASS",
+   "positive ladder-GDP correlation (sanity)": "PASS"
+  }
+ },
+ "engine": {"duckdb": "1.5.6", "python": "3.13.5"},
+ "sql_timings_s": {
+  "00_duckdb_compat.sql": 0.002,
+  "01_staging.sql": 0.01,
+  "02_cleaning.sql": 0.018,
+  "03_model.sql": 0.008,
+  "04_analysis.sql": 0.032,
+  "05_quality_checks.sql": 0.019
+ }
+}

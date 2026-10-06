@@ -1,0 +1,10 @@
+entity,column_name,null_pct,treatment
+fact_country_year,gdp_pc_usd (World Bank),0.613,no WB match or no GDP that year
+whr_panel,Freedom to make life choices,0.0,kept NULL
+whr_panel,Generosity,1.84,kept NULL
+whr_panel,Healthy life expectancy,0.0,kept NULL
+whr_panel,Log GDP per capita,1.227,kept NULL; WB GDP used instead
+whr_panel,Negative affect,0.0,kept NULL
+whr_panel,Perceptions of corruption,0.613,kept NULL
+whr_panel,Positive affect,0.613,kept NULL
+whr_panel,Social support,0.613,kept NULL (excluded from AVG/corr)

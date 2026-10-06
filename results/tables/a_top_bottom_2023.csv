@@ -1,0 +1,21 @@
+grp,rnk,country,region,life_ladder,gdp_pc_usd
+bottom 10,1,Afghanistan,South Asia,1.446,
+bottom 10,2,Malawi,Sub-Saharan Africa,3.272,667.0
+bottom 10,3,Botswana,Sub-Saharan Africa,3.332,7820.0
+bottom 10,4,Congo (Kinshasa),Sub-Saharan Africa,3.383,628.0
+bottom 10,5,Sierra Leone,Sub-Saharan Africa,3.467,450.0
+bottom 10,6,Yemen,Middle East and North Africa,3.532,
+bottom 10,7,Zimbabwe,Sub-Saharan Africa,3.572,1624.0
+bottom 10,8,Comoros,Sub-Saharan Africa,3.588,1590.0
+bottom 10,9,Lebanon,Middle East and North Africa,3.588,
+bottom 10,10,Sri Lanka,South Asia,3.602,3828.0
+top 10,1,Finland,Western Europe,7.699,53759.0
+top 10,2,Iceland,Western Europe,7.562,80433.0
+top 10,3,Denmark,Western Europe,7.504,67967.0
+top 10,4,Costa Rica,Latin America and Caribbean,7.384,16942.0
+top 10,5,Netherlands,Western Europe,7.255,62545.0
+top 10,6,Norway,Western Europe,7.249,87962.0
+top 10,7,Sweden,Western Europe,7.161,56305.0
+top 10,8,Kuwait,Middle East and North Africa,7.13,33332.0
+top 10,9,Australia,North America and ANZ,7.025,64660.0
+top 10,10,Luxembourg,Western Europe,7.016,128678.0

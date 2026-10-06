@@ -1,0 +1,166 @@
+country,iso3,wb_name,region,ladder_2024,first_year,last_year,survey_years,dq_region_fallback,dq_name_override,dq_no_wb_match
+Afghanistan,AFG,Afghanistan,South Asia,1.721,2008,2023,15,0,0,0
+Albania,ALB,Albania,Central and Eastern Europe,5.304,2007,2023,16,0,0,0
+Algeria,DZA,Algeria,Middle East and North Africa,5.364,2010,2022,11,0,0,0
+Angola,AGO,Angola,Sub-Saharan Africa,,2011,2014,4,1,0,0
+Argentina,ARG,Argentina,Latin America and Caribbean,6.188,2006,2023,18,0,0,0
+Armenia,ARM,Armenia,Commonwealth of Independent States,5.455,2006,2023,17,0,0,0
+Australia,AUS,Australia,North America and ANZ,7.057,2005,2023,17,0,0,0
+Austria,AUT,Austria,Western Europe,6.905,2006,2023,16,0,0,0
+Azerbaijan,AZE,Azerbaijan,Commonwealth of Independent States,4.893,2006,2023,16,0,0,0
+Bahrain,BHR,Bahrain,Middle East and North Africa,5.959,2009,2023,12,0,0,0
+Bangladesh,BGD,Bangladesh,South Asia,3.886,2006,2023,18,0,0,0
+Belarus,BLR,Belarus,Commonwealth of Independent States,,2006,2019,14,1,0,0
+Belgium,BEL,Belgium,Western Europe,6.894,2005,2023,17,0,0,0
+Belize,BLZ,Belize,Latin America and Caribbean,,2007,2014,2,1,0,0
+Benin,BEN,Benin,Sub-Saharan Africa,4.377,2006,2023,15,0,0,0
+Bhutan,BTN,Bhutan,South Asia,,2013,2015,3,1,0,0
+Bolivia,BOL,Bolivia,Latin America and Caribbean,5.784,2006,2023,18,0,0,0
+Bosnia and Herzegovina,BIH,Bosnia and Herzegovina,Central and Eastern Europe,5.877,2007,2023,16,0,0,0
+Botswana,BWA,Botswana,Sub-Saharan Africa,3.383,2006,2023,14,0,0,0
+Brazil,BRA,Brazil,Latin America and Caribbean,6.272,2005,2023,18,0,0,0
+Bulgaria,BGR,Bulgaria,Central and Eastern Europe,5.463,2007,2023,15,0,0,0
+Burkina Faso,BFA,Burkina Faso,Sub-Saharan Africa,4.548,2006,2023,16,0,0,0
+Burundi,BDI,Burundi,Sub-Saharan Africa,,2008,2018,5,1,0,0
+Cambodia,KHM,Cambodia,Southeast Asia,4.341,2006,2023,18,0,0,0
+Cameroon,CMR,Cameroon,Sub-Saharan Africa,4.874,2006,2023,18,0,0,0
+Canada,CAN,Canada,North America and ANZ,6.9,2005,2023,18,0,0,0
+Central African Republic,CAF,Central African Republic,Sub-Saharan Africa,,2007,2017,5,1,0,0
+Chad,TCD,Chad,Sub-Saharan Africa,4.471,2006,2023,16,0,0,0
+Chile,CHL,Chile,Latin America and Caribbean,6.36,2006,2023,18,0,0,0
+China,CHN,China,East Asia,5.973,2006,2023,17,0,0,0
+Colombia,COL,Colombia,Latin America and Caribbean,5.695,2006,2023,18,0,0,0
+Comoros,COM,Comoros,Sub-Saharan Africa,3.566,2009,2023,8,0,0,0
+Congo (Brazzaville),COG,"Congo, Rep.",Sub-Saharan Africa,5.221,2008,2023,14,0,1,0
+Congo (Kinshasa),COD,"Congo, Dem. Rep.",Sub-Saharan Africa,3.295,2009,2023,10,0,1,0
+Costa Rica,CRI,Costa Rica,Latin America and Caribbean,6.955,2006,2023,18,0,0,0
+Croatia,HRV,Croatia,Central and Eastern Europe,5.942,2007,2023,16,0,0,0
+Cuba,CUB,Cuba,Latin America and Caribbean,,2006,2006,1,1,0,0
+Cyprus,CYP,Cyprus,Western Europe,6.068,2006,2023,16,0,0,0
+Czechia,CZE,Czechia,Central and Eastern Europe,6.822,2005,2023,15,0,0,0
+Denmark,DNK,Denmark,Western Europe,7.583,2005,2023,18,0,0,0
+Djibouti,DJI,Djibouti,Sub-Saharan Africa,,2008,2011,4,1,0,0
+Dominican Republic,DOM,Dominican Republic,Latin America and Caribbean,5.823,2006,2023,18,0,0,0
+Ecuador,ECU,Ecuador,Latin America and Caribbean,5.725,2006,2023,18,0,0,0
+Egypt,EGY,"Egypt, Arab Rep.",Middle East and North Africa,3.977,2005,2023,18,0,1,0
+El Salvador,SLV,El Salvador,Latin America and Caribbean,6.469,2006,2023,18,0,0,0
+Estonia,EST,Estonia,Central and Eastern Europe,6.448,2006,2023,17,0,0,0
+Eswatini,SWZ,Eswatini,Sub-Saharan Africa,3.502,2011,2022,4,0,0,0
+Ethiopia,ETH,Ethiopia,Sub-Saharan Africa,3.861,2012,2023,11,0,0,0
+Finland,FIN,Finland,Western Europe,7.741,2006,2023,16,0,0,0
+France,FRA,France,Western Europe,6.609,2005,2023,18,0,0,0
+Gabon,GAB,Gabon,Sub-Saharan Africa,5.106,2011,2023,13,0,0,0
+Gambia,GMB,"Gambia, The",Sub-Saharan Africa,4.485,2017,2023,5,0,1,0
+Georgia,GEO,Georgia,Commonwealth of Independent States,5.185,2006,2023,18,0,0,0
+Germany,DEU,Germany,Western Europe,6.719,2005,2023,18,0,0,0
+Ghana,GHA,Ghana,Sub-Saharan Africa,4.289,2006,2023,18,0,0,0
+Greece,GRC,Greece,Western Europe,5.934,2005,2023,17,0,0,0
+Guatemala,GTM,Guatemala,Latin America and Caribbean,6.287,2006,2023,16,0,0,0
+Guinea,GIN,Guinea,Sub-Saharan Africa,5.023,2011,2023,13,0,0,0
+Guyana,GUY,Guyana,Latin America and Caribbean,,2007,2007,1,1,0,0
+Haiti,HTI,Haiti,Latin America and Caribbean,,2006,2018,11,1,0,0
+Honduras,HND,Honduras,Latin America and Caribbean,5.968,2006,2023,17,0,0,0
+Hong Kong S.A.R. of China,HKG,"Hong Kong SAR, China",East Asia,5.316,2006,2022,13,0,1,0
+Hungary,HUN,Hungary,Central and Eastern Europe,6.017,2005,2023,17,0,0,0
+Iceland,ISL,Iceland,Western Europe,7.525,2008,2023,11,0,0,0
+India,IND,India,South Asia,4.054,2006,2023,18,0,0,0
+Indonesia,IDN,Indonesia,Southeast Asia,5.568,2006,2023,18,0,0,0
+Iran,IRN,"Iran, Islamic Rep.",Middle East and North Africa,4.923,2005,2023,16,0,1,0
+Iraq,IRQ,Iraq,Middle East and North Africa,5.166,2008,2023,15,0,0,0
+Ireland,IRL,Ireland,Western Europe,6.838,2006,2023,17,0,0,0
+Israel,ISR,Israel,Middle East and North Africa,7.341,2006,2023,18,0,0,0
+Italy,ITA,Italy,Western Europe,6.324,2005,2023,18,0,0,0
+Ivory Coast,CIV,Cote d'Ivoire,Sub-Saharan Africa,5.08,2009,2023,12,0,1,0
+Jamaica,JAM,Jamaica,Latin America and Caribbean,5.842,2006,2022,9,0,0,0
+Japan,JPN,Japan,East Asia,6.06,2005,2023,18,0,0,0
+Jordan,JOR,Jordan,Middle East and North Africa,4.186,2005,2023,18,0,0,0
+Kazakhstan,KAZ,Kazakhstan,Commonwealth of Independent States,6.188,2006,2023,18,0,0,0
+Kenya,KEN,Kenya,Sub-Saharan Africa,4.47,2006,2023,18,0,0,0
+Kosovo,XKX,Kosovo,Central and Eastern Europe,6.561,2007,2023,17,0,0,0
+Kuwait,KWT,Kuwait,Middle East and North Africa,6.951,2006,2023,13,0,0,0
+Kyrgyzstan,KGZ,Kyrgyz Republic,Commonwealth of Independent States,5.714,2006,2023,18,0,1,0
+Laos,LAO,Lao PDR,Southeast Asia,5.139,2006,2023,12,0,1,0
+Latvia,LVA,Latvia,Central and Eastern Europe,6.234,2006,2023,17,0,0,0
+Lebanon,LBN,Lebanon,Middle East and North Africa,2.707,2005,2023,18,0,0,0
+Lesotho,LSO,Lesotho,Sub-Saharan Africa,3.186,2011,2022,5,0,0,0
+Liberia,LBR,Liberia,Sub-Saharan Africa,4.269,2007,2023,11,0,0,0
+Libya,LBY,Libya,Middle East and North Africa,5.866,2012,2023,8,0,0,0
+Lithuania,LTU,Lithuania,Central and Eastern Europe,6.818,2006,2023,18,0,0,0
+Luxembourg,LUX,Luxembourg,Western Europe,7.122,2009,2023,13,0,0,0
+Madagascar,MDG,Madagascar,Sub-Saharan Africa,4.228,2006,2023,13,0,0,0
+Malawi,MWI,Malawi,Sub-Saharan Africa,3.421,2006,2023,15,0,0,0
+Malaysia,MYS,Malaysia,Southeast Asia,5.975,2006,2023,16,0,0,0
+Maldives,MDV,Maldives,South Asia,,2018,2018,1,1,0,0
+Mali,MLI,Mali,Sub-Saharan Africa,4.232,2006,2023,17,0,0,0
+Malta,MLT,Malta,Western Europe,6.346,2009,2023,15,0,0,0
+Mauritania,MRT,Mauritania,Sub-Saharan Africa,4.505,2007,2023,15,0,0,0
+Mauritius,MUS,Mauritius,Sub-Saharan Africa,5.816,2011,2023,10,0,0,0
+Mexico,MEX,Mexico,Latin America and Caribbean,6.678,2005,2023,18,0,0,0
+Moldova,MDA,Moldova,Commonwealth of Independent States,5.816,2006,2023,18,0,0,0
+Mongolia,MNG,Mongolia,East Asia,5.696,2007,2023,16,0,0,0
+Montenegro,MNE,Montenegro,Central and Eastern Europe,5.707,2007,2023,15,0,0,0
+Morocco,MAR,Morocco,Middle East and North Africa,4.795,2010,2023,13,0,0,0
+Mozambique,MOZ,Mozambique,Sub-Saharan Africa,5.216,2006,2023,11,0,0,0
+Myanmar,MMR,Myanmar,Southeast Asia,4.354,2012,2023,12,0,0,0
+Namibia,NAM,Namibia,Sub-Saharan Africa,4.832,2007,2023,9,0,0,0
+Nepal,NPL,Nepal,South Asia,5.158,2006,2023,18,0,0,0
+Netherlands,NLD,Netherlands,Western Europe,7.319,2005,2023,17,0,0,0
+New Zealand,NZL,New Zealand,North America and ANZ,7.029,2006,2023,17,0,0,0
+Nicaragua,NIC,Nicaragua,Latin America and Caribbean,6.284,2006,2023,18,0,0,0
+Niger,NER,Niger,Sub-Saharan Africa,4.556,2006,2023,16,0,0,0
+Nigeria,NGA,Nigeria,Sub-Saharan Africa,4.881,2006,2023,16,0,0,0
+North Macedonia,MKD,North Macedonia,Central and Eastern Europe,5.369,2007,2023,16,0,0,0
+Norway,NOR,Norway,Western Europe,7.302,2006,2023,13,0,0,0
+Oman,OMN,Oman,Middle East and North Africa,,2011,2011,1,1,0,0
+Pakistan,PAK,Pakistan,South Asia,4.657,2005,2023,18,0,0,0
+Panama,PAN,Panama,Latin America and Caribbean,6.358,2006,2023,17,0,0,0
+Paraguay,PRY,Paraguay,Latin America and Caribbean,5.977,2006,2023,17,0,0,0
+Peru,PER,Peru,Latin America and Caribbean,5.841,2006,2023,18,0,0,0
+Philippines,PHL,Philippines,Southeast Asia,6.048,2006,2023,18,0,0,0
+Poland,POL,Poland,Central and Eastern Europe,6.442,2005,2023,17,0,0,0
+Portugal,PRT,Portugal,Western Europe,6.03,2006,2023,16,0,0,0
+Qatar,QAT,Qatar,Middle East and North Africa,,2009,2015,5,1,0,0
+Romania,ROU,Romania,Central and Eastern Europe,6.491,2005,2023,17,0,0,0
+Russia,RUS,Russian Federation,Commonwealth of Independent States,5.785,2006,2023,18,0,1,0
+Rwanda,RWA,Rwanda,Sub-Saharan Africa,,2006,2019,12,1,0,0
+Saudi Arabia,SAU,Saudi Arabia,Middle East and North Africa,6.594,2005,2023,18,0,0,0
+Senegal,SEN,Senegal,Sub-Saharan Africa,4.969,2006,2023,18,0,0,0
+Serbia,SRB,Serbia,Central and Eastern Europe,6.411,2007,2023,16,0,0,0
+Sierra Leone,SLE,Sierra Leone,Sub-Saharan Africa,3.245,2006,2023,15,0,0,0
+Singapore,SGP,Singapore,Southeast Asia,6.523,2006,2023,16,0,0,0
+Slovakia,SVK,Slovak Republic,Central and Eastern Europe,6.257,2006,2023,15,0,1,0
+Slovenia,SVN,Slovenia,Central and Eastern Europe,6.743,2006,2023,16,0,0,0
+Somalia,SOM,"Somalia, Fed. Rep.",Sub-Saharan Africa,,2014,2016,3,1,1,0
+Somaliland region,,Somaliland region,Sub-Saharan Africa,,2009,2012,4,1,0,1
+South Africa,ZAF,South Africa,Sub-Saharan Africa,5.422,2006,2023,18,0,0,0
+South Korea,KOR,"Korea, Rep.",East Asia,6.058,2006,2023,18,0,1,0
+South Sudan,SSD,South Sudan,Sub-Saharan Africa,,2014,2017,4,1,0,0
+Spain,ESP,Spain,Western Europe,6.421,2005,2023,18,0,0,0
+Sri Lanka,LKA,Sri Lanka,South Asia,3.898,2006,2023,17,0,0,0
+State of Palestine,PSE,West Bank and Gaza,Middle East and North Africa,4.879,2006,2023,16,0,1,0
+Sudan,SDN,Sudan,Sub-Saharan Africa,,2009,2014,5,1,0,0
+Suriname,SUR,Suriname,Latin America and Caribbean,,2012,2012,1,1,0,0
+Sweden,SWE,Sweden,Western Europe,7.344,2005,2023,18,0,0,0
+Switzerland,CHE,Switzerland,Western Europe,7.06,2006,2023,13,0,0,0
+Syria,SYR,Syrian Arab Republic,Middle East and North Africa,,2008,2015,7,1,1,0
+Taiwan Province of China,,Taiwan Province of China,East Asia,6.503,2006,2023,16,0,0,1
+Tajikistan,TJK,Tajikistan,Commonwealth of Independent States,5.281,2006,2023,18,0,0,0
+Tanzania,TZA,Tanzania,Sub-Saharan Africa,3.781,2006,2023,18,0,0,0
+Thailand,THA,Thailand,Southeast Asia,5.976,2006,2023,18,0,0,0
+Togo,TGO,Togo,Sub-Saharan Africa,4.214,2006,2023,12,0,0,0
+Trinidad and Tobago,TTO,Trinidad and Tobago,Latin America and Caribbean,,2006,2017,5,1,0,0
+Tunisia,TUN,Tunisia,Middle East and North Africa,4.422,2009,2023,15,0,0,0
+Turkiye,TUR,Turkiye,Middle East and North Africa,4.975,2005,2023,18,0,0,0
+Turkmenistan,TKM,Turkmenistan,Commonwealth of Independent States,,2009,2019,10,1,0,0
+Uganda,UGA,Uganda,Sub-Saharan Africa,4.372,2006,2023,18,0,0,0
+Ukraine,UKR,Ukraine,Commonwealth of Independent States,4.873,2006,2023,18,0,0,0
+United Arab Emirates,ARE,United Arab Emirates,Middle East and North Africa,6.733,2006,2023,16,0,0,0
+United Kingdom,GBR,United Kingdom,Western Europe,6.749,2005,2023,18,0,0,0
+United States,USA,United States,North America and ANZ,6.725,2006,2023,18,0,0,0
+Uruguay,URY,Uruguay,Latin America and Caribbean,6.611,2006,2023,18,0,0,0
+Uzbekistan,UZB,Uzbekistan,Commonwealth of Independent States,6.195,2006,2023,17,0,0,0
+Venezuela,VEN,"Venezuela, RB",Latin America and Caribbean,5.607,2005,2023,18,0,1,0
+Vietnam,VNM,Viet Nam,Southeast Asia,6.043,2006,2023,18,0,1,0
+Yemen,YEM,"Yemen, Rep.",Middle East and North Africa,3.561,2007,2023,14,0,1,0
+Zambia,ZMB,Zambia,Sub-Saharan Africa,3.502,2006,2023,17,0,0,0
+Zimbabwe,ZWE,Zimbabwe,Sub-Saharan Africa,3.341,2006,2023,18,0,0,0

@@ -1,0 +1,11 @@
+country,region,gdp_pc_usd,life_ladder,predicted_ladder,residual,residual_rank
+Afghanistan,South Asia,357.0,1.721,2.892,-1.171,10
+Benin,Sub-Saharan Africa,1326.0,4.377,4.123,0.254,5
+Chile,Latin America and Caribbean,16245.0,6.36,6.474,-0.114,7
+Ecuador,Latin America and Caribbean,6409.0,5.725,5.601,0.124,6
+Guatemala,Latin America and Caribbean,5477.0,6.286,5.454,0.832,1
+Italy,Western Europe,36565.0,6.323,7.235,-0.912,9
+Liberia,Sub-Saharan Africa,767.0,4.268,3.609,0.659,2
+Mongolia,East Asia,5073.0,5.696,5.382,0.314,4
+Serbia,Central and Eastern Europe,10041.0,6.411,6.022,0.389,3
+Ukraine,Commonwealth of Independent States,4398.0,4.873,5.248,-0.375,8

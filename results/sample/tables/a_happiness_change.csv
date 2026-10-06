@@ -1,0 +1,11 @@
+country,region,early_ladder,late_ladder,ladder_change,gdp_pc_ppp_growth_pct,change_rank
+Afghanistan,South Asia,4.295,1.884,-2.41,-0.8,10
+Benin,Sub-Saharan Africa,3.499,4.503,1.004,27.4,3
+Chile,Latin America and Caribbean,6.136,6.235,0.099,22.7,6
+Ecuador,Latin America and Caribbean,5.435,5.667,0.232,7.6,5
+Guatemala,Latin America and Caribbean,6.277,6.278,0.0,25.0,7
+Italy,Western Europe,6.511,6.381,-0.13,-2.9,8
+Liberia,Sub-Saharan Africa,4.039,4.552,0.513,8.2,4
+Mongolia,East Asia,4.563,5.733,1.17,67.1,2
+Serbia,Central and Eastern Europe,4.53,6.303,1.773,37.6,1
+Ukraine,Commonwealth of Independent States,5.09,4.918,-0.172,-3.2,9

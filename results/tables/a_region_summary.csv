@@ -1,0 +1,11 @@
+region,countries,avg_ladder,min_ladder,max_ladder,pop_weighted_ladder,avg_gdp_pc_usd,population_m,avg_social_support,avg_healthy_life_exp
+Central and Eastern Europe,17,6.171,5.304,6.821,6.322,17418.0,116.7,0.892,68.2
+Commonwealth of Independent States,10,5.539,4.873,6.195,5.667,6147.0,276.8,0.842,65.4
+East Asia,6,5.94,5.317,6.503,6.006,27301.0,1599.2,0.856,69.5
+Latin America and Caribbean,19,6.143,5.607,6.956,6.219,9091.0,622.6,0.843,66.8
+Middle East and North Africa,17,5.201,2.706,7.341,4.846,15741.0,552.0,0.779,66.1
+North America and ANZ,4,6.927,6.724,7.057,6.766,60701.0,404.6,0.92,69.7
+South Asia,6,3.895,1.721,5.162,4.082,1968.0,1931.4,0.588,61.3
+Southeast Asia,9,5.551,4.342,6.525,5.659,13338.0,683.2,0.794,64.9
+Sub-Saharan Africa,35,4.33,3.186,5.816,4.363,2234.0,1078.9,0.657,56.9
+Western Europe,20,6.842,5.933,7.741,6.671,57708.0,429.6,0.903,71.7

@@ -1,0 +1,5 @@
+growth_quartile,countries,avg_gdp_pc_growth_pct,avg_ladder_change,pct_countries_happier
+G1 slowest,31,0.4,-0.248,29.0
+G2,31,17.2,0.076,54.8
+G3,30,33.0,0.392,80.0
+G4 fastest,30,66.2,0.495,73.3

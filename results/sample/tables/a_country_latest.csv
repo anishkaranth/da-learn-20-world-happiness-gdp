@@ -1,0 +1,11 @@
+country_key,country,region,iso3,obs,life_ladder,social_support,healthy_life_exp,freedom,generosity,corruption,gdp_pc_usd,population
+1,Afghanistan,South Asia,AFG,3,1.721,0.35,54.88,0.33,-0.085,0.806,357.0,40678005.0
+2,Benin,Sub-Saharan Africa,BEN,3,4.377,0.4,56.4,0.741,-0.041,0.589,1326.0,13761317.0
+3,Chile,Latin America and Caribbean,CHL,3,6.36,0.884,70.45,0.804,-0.031,0.83,16245.0,19556068.0
+4,Ecuador,Latin America and Caribbean,ECU,3,5.725,0.798,69.25,0.77,-0.092,0.827,6409.0,17828811.0
+5,Guatemala,Latin America and Caribbean,GTM,2,6.286,0.801,63.0,0.865,-0.055,0.824,5477.0,17986358.0
+6,Italy,Western Europe,ITA,3,6.323,0.869,72.13,0.704,-0.041,0.833,36565.0,59043685.0
+7,Liberia,Sub-Saharan Africa,LBR,2,4.268,0.613,57.0,0.726,0.095,0.831,767.0,5433163.0
+8,Mongolia,East Asia,MNG,3,5.696,0.939,60.6,0.694,0.215,0.856,5073.0,3432878.0
+10,Serbia,Central and Eastern Europe,SRB,3,6.411,0.894,67.28,0.813,0.14,0.796,10041.0,6707319.0
+12,Ukraine,Commonwealth of Independent States,UKR,3,4.873,0.86,64.68,0.79,0.315,0.899,4398.0,41026747.0

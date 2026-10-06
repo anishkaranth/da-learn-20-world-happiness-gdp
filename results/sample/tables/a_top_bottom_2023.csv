@@ -1,0 +1,21 @@
+grp,rnk,country,region,life_ladder,gdp_pc_usd
+bottom 10,1,Afghanistan,South Asia,1.446,
+bottom 10,2,Benin,Sub-Saharan Africa,4.42,1394.0
+bottom 10,3,Liberia,Sub-Saharan Africa,4.494,789.0
+bottom 10,4,Ukraine,Commonwealth of Independent States,4.672,4737.0
+bottom 10,5,Mongolia,East Asia,5.58,5709.0
+bottom 10,6,Ecuador,Latin America and Caribbean,5.852,6610.0
+bottom 10,7,Chile,Latin America and Caribbean,6.23,17068.0
+bottom 10,8,Italy,Western Europe,6.245,38228.0
+bottom 10,9,Guatemala,Latin America and Caribbean,6.421,5630.0
+bottom 10,10,Serbia,Central and Eastern Europe,6.441,11352.0
+top 10,1,Serbia,Central and Eastern Europe,6.441,11352.0
+top 10,2,Guatemala,Latin America and Caribbean,6.421,5630.0
+top 10,3,Italy,Western Europe,6.245,38228.0
+top 10,4,Chile,Latin America and Caribbean,6.23,17068.0
+top 10,5,Ecuador,Latin America and Caribbean,5.852,6610.0
+top 10,6,Mongolia,East Asia,5.58,5709.0
+top 10,7,Ukraine,Commonwealth of Independent States,4.672,4737.0
+top 10,8,Liberia,Sub-Saharan Africa,4.494,789.0
+top 10,9,Benin,Sub-Saharan Africa,4.42,1394.0
+top 10,10,Afghanistan,South Asia,1.446,
